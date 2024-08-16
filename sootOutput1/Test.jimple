@@ -1,0 +1,64 @@
+public class Test extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        Test r0;
+
+        r0 := @this: Test;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.StringBuilder $r0, $r2, $r3;
+        java.io.PrintStream $r1;
+        int $i0, i1;
+        java.lang.String $r4;
+        Node $r5, r7;
+        java.lang.String[] r6;
+
+        r6 := @parameter0: java.lang.String[];
+
+        r7 = null;
+
+        i1 = 0;
+
+     label1:
+        if i1 >= 100000000 goto label2;
+
+        $r5 = new Node;
+
+        specialinvoke $r5.<Node: void <init>()>();
+
+        r7 = $r5;
+
+        $r5.<Node: int i> = 5;
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        $r0 = new java.lang.StringBuilder;
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>()>();
+
+        $r2 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("g.i is ");
+
+        $i0 = r7.<Node: int i>;
+
+        $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i0);
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>($r4);
+
+        return;
+    }
+}

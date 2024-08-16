@@ -1,0 +1,136 @@
+public class Test3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        Test3 r0;
+
+        r0 := @this: Test3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int $i1, i2;
+        double d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, d10, d11, d12, d13;
+        java.lang.StringBuilder $r0, $r2, $r3, $r5, $r7, $r8, $r10, $r12, $r13, $r15, $r17, $r18;
+        java.io.PrintStream $r1, $r6, $r11, $r16, $r20;
+        java.lang.String $r4, $r9, $r14, $r19;
+        java.lang.String[] r21;
+
+        r21 := @parameter0: java.lang.String[];
+
+        $i1 = 12 * 4;
+
+        d0 = (double) $i1;
+
+        d10 = 0.0;
+
+        d11 = 0.0;
+
+        d12 = 0.0;
+
+        d13 = 0.0;
+
+        i2 = 0;
+
+     label1:
+        if i2 >= 100000000 goto label2;
+
+        $d1 = (double) i2;
+
+        $d2 = staticinvoke <java.lang.Math: double sin(double)>(d0);
+
+        d10 = $d1 * $d2;
+
+        $d4 = (double) i2;
+
+        $d3 = (double) i2;
+
+        $d5 = staticinvoke <java.lang.Math: double cos(double)>($d3);
+
+        d11 = $d4 * $d5;
+
+        $d6 = (double) i2;
+
+        $d7 = staticinvoke <java.lang.Math: double sqrt(double)>(d11);
+
+        d12 = $d6 * $d7;
+
+        $d8 = (double) i2;
+
+        $d9 = staticinvoke <java.lang.Math: double exp(double)>(2.0);
+
+        d13 = $d8 * $d9;
+
+        i2 = i2 + 1;
+
+        goto label1;
+
+     label2:
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        $r0 = new java.lang.StringBuilder;
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>()>();
+
+        $r2 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("sin(i) = ");
+
+        $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d10);
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>($r4);
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+
+        $r5 = new java.lang.StringBuilder;
+
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>()>();
+
+        $r7 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("cos(i) = ");
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d11);
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>($r9);
+
+        $r11 = <java.lang.System: java.io.PrintStream out>;
+
+        $r10 = new java.lang.StringBuilder;
+
+        specialinvoke $r10.<java.lang.StringBuilder: void <init>()>();
+
+        $r12 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("sqrt(i) = ");
+
+        $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d12);
+
+        $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r11.<java.io.PrintStream: void println(java.lang.String)>($r14);
+
+        $r16 = <java.lang.System: java.io.PrintStream out>;
+
+        $r15 = new java.lang.StringBuilder;
+
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>()>();
+
+        $r17 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("exp(i) = ");
+
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d13);
+
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r16.<java.io.PrintStream: void println(java.lang.String)>($r19);
+
+        $r20 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r20.<java.io.PrintStream: void println()>();
+
+        return;
+    }
+}
